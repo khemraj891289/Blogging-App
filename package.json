@@ -1,0 +1,24 @@
+{
+  "name": "civilservicesociety",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodejs ./bin/www"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "debug": "~0.7.4",
+    "ejs": "~0.8.5",
+    "express": "~4.0.0",
+    "express-session": "^1.14.2",
+    "mongoose": "^4.5.3",
+    "morgan": "~1.0.0",
+    "passport-local": "^1.0.0",
+    "static-favicon": "~1.0.0"
+  },
+  "engines": {
+    "node": "4.2.6"
+  }
+}

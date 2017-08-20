@@ -1,0 +1,222 @@
+/*!
+ * Start Bootstrap - SB Admin Bootstrap Admin Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+body {
+    margin-top: 65px;
+}
+
+@media(min-width:768px) {
+    body {
+        margin-top: 65px;
+    }
+}
+@media(max-width: 768px) {
+    .intro{
+        display: none;
+    }
+}
+#wrapper {
+    padding: 0px;
+}
+
+#page-wrapper {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.navbar{
+	height: 60px;
+	z-index: 10000;
+}
+.collapse1{
+	width: 200px;
+}
+@media(min-width:768px) {
+    .navbar-header{
+        padding-left: 3%;
+    }
+    
+    #wrapper {
+        margin-left: 225px;
+    }
+}
+
+/* Top Navigation */
+
+.top-nav {
+    padding: 10px 30px;
+     display: -webkit-inline-box;
+     float: right!important;
+}
+
+.top-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+}
+.navbar-toggle{
+	float: left;
+	margin:15px;
+}
+
+span>a{
+    color: white;
+}
+span>a:hover{
+    color: white;
+}
+
+.top-nav>li>a:hover,.top-nav>li>a:focus,.top-nav>.open>a,.top-nav>.open>a:hover,.top-nav>.open>a:focus {
+    background-color: #45526E;
+}
+@media(min-width: 768px){
+	.navbar-header{
+		float: right!important;
+	}
+}
+
+/* Side Navigation */
+.side-nav {
+    position: fixed;
+    top: -8px;
+    width: 200px;
+    border: none;
+    border-radius: 0;
+    overflow-y: auto;
+    background-color: #1C2331;
+    bottom: 0;
+    overflow-x: hidden;
+    padding-bottom: 40px;
+    z-index: 10000;
+}
+.side-nav>li>a{
+    color: rgb(255, 255, 255)!important;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding-left: 20px;
+}
+
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 0px;
+        left: 225px;
+        width: 225px;
+        margin-left: -225px;
+        border: none;
+        border-radius: 0;
+        overflow-y: auto;
+        background-color: #1C2331;
+        bottom: 0;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+    }
+
+    .side-nav>li>a {
+        width: 225px;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: #000 !important;
+    }
+}
+
+.side-nav>li>ul {
+    padding: 0;
+}
+
+.side-nav>li>ul>li>a {
+    display: block;
+    padding: 10px 15px 10px 38px;
+    text-decoration: none;
+    color: #999;
+}
+
+.side-nav>li>ul>li>a:hover {
+    color: #fff;
+}
+
+.page-wrapper{
+    display: none;
+}
+
+/*style for sign up and sign in */
+#signup{
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+#signup h2{
+    margin-top: 0px;
+}
+#signup .myinput{
+    width: 65%;
+}
+#signup .notification{
+    color: #CC0000;
+}
+
+
+/*style for blogs */
+#mainblog{
+    text-align: center;
+}
+.mainblog1{
+    margin: 0px 0px 10px 0px;!important;
+    padding: 3px;
+}
+#articles-posted{
+    text-align: center;
+}
+.article_blog{
+    width: 98%;
+    margin: 1%;
+    display: inline-block;
+}
+@media(max-width: 768px){
+  .article_blog{
+    width: 98%;
+    margin: 1%;
+    display: inline-block;
+}  
+}
+
+
+/*style for contactus */
+#contactus{
+    width: 60%;
+    max-width: 650px;
+    min-width: 350px;
+    margin: auto;
+    border: 2px solid;
+}
+#contactus .main_part{
+    padding: 0px 40px  40px 40px;
+}
+#contactus>.rgba-bluegrey-strong>p{
+    margin: 0 0 10px;
+    padding: 20px;
+    font-size: 2em;
+    font-weight: 800;
+}
+#contactus>.main_part>p{
+    margin-top: 15px;
+}
+
+#postblog{
+    width: 90%;
+    max-width: 800px;
+    min-width: 350px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid;
+}

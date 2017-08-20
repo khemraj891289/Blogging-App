@@ -1,0 +1,21 @@
+    <div id="mainblog" class="card-header info-color-dark white-text">
+      <h2 class="mainblog1">Articles</h2>
+      <p>If you want to post a blog? <a class="black-text" href="#/postBlog">Post</a></p>
+    </div>
+    <div id="articles-posted">
+      <ul>
+      <li ng-repeat="article in articles | orderBy:'timestamp':true" class="card article_blog">
+        <div class="card-header secondary-color-dark white-text">
+           <h3 class="mainblog1">{{article.title}}</h3>
+        </div>
+        <div class="card-block" style="padding: 0.5% 6%;">
+            <div ng-bind-html="article.text"></div>
+            <hr style="margin: 2px;">
+            <p> <small>posted by {{article.username}} at {{article.timestamp | date:"h:mma 'on' MMM d, y"}}</small></p>
+            <hr style="margin: 8px;" ng-show="isUserOwner(article)">
+            <input class="button warning-color-dark" type="submit" value="Edit" ng-click="edit(article)" ng-show="isUserOwner(article)"/>
+            <input class="button danger-color-dark" type="submit" value="Delete" ng-click="del(article)" ng-show="isUserOwner(article)"/>
+        </div>
+      </li>
+    </ul>
+    </div>

@@ -1,0 +1,15 @@
+<!--Panel-->
+<div id="signup" class="card text-xs-center">
+    <form ng-Submit="signin()">
+    	<div class="card-header default-color-dark white-text">
+            <h2>Login</h2>
+            <p>If not register?<a href="#/signup">Register</a></p>
+        </div>
+         <p class="notification">{{msg}}</p>
+         <input required class="myinput" type="text" ng-model="user.username" placeholder="Username"><br/><br/>
+         <input required class="myinput" type="password" ng-model="user.password" placeholder="Password"><br/><br/>
+         <input class="btn mdb-color" type="submit" value="Sign in"/>
+    </form>
+</div>
+<!--/.Panel-->
+

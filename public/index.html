@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyApp</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular-resource.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-sanitize.js"></script>
+
+    <!-- SCript and css for text editor -->
+     <script src='http://textangular.com/dist/textAngular-rangy.min.js'></script>
+    
+      <script src='http://textangular.com/dist/textAngular-sanitize.min.js'></script>
+    
+      <script src='http://textangular.com/dist/textAngular.min.js'></script>
+    <script src="javascripts/articleApp.js"></script>
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://textangular.com/dist/textAngular.css" type="text/css">
+
+  </head>
+
+  <body ng-app="articleApp">
+    <div id="wrapper">
+     <!-- Navigation -->
+        <nav id="navigation-ani" class="navbar navbar-fixed-top mdb-color" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button id="navigate" type="button" class="navbar-toggle btn teal darken-3 nav-link dropdown-toggle">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <!-- Top Menu Items -->
+                <ul ng-hide="authenticated" class="nav top-nav">
+                         <li><a href="#/signup">Sign Up</a></li>
+                         <li><a href="#/signin">Sign In</a></li>
+                </ul>
+                <ul ng-show="authenticated" class="nav top-nav">
+                         <li  ng-cloak><a href="#">{{current_user}}</a></li>
+                         <li><a href="#" ng-click="signout()">Sign Out</a></li>
+                </ul>
+            </div>
+            
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse1 navbar-collapse1">
+                <ul class="intro nav navbar-nav side-nav">
+                <li>
+                    <a class="myHeader waves-effect waves-light" href="#/">MyApp</a>
+                </li>
+                    <li>
+                        <a class="myHeader waves-effect waves-light" href="#/"> Home</a>
+                    </li>
+                    <li >
+                        <a id="myHeader" class="myHeader waves-effect waves-light" href="#/about">About us</a>
+                    </li>
+                    <li>
+                        <a id="myHeader6" class="myHeader waves-effect waves-light" href="#/blogs">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+
+     <div id="page-wrapper"  onclick="if($(window).width()<768){$('.intro').slideUp()};" ng-view></div>
+     <!--Footer-->
+      <footer id="footer" class="page-footer center-on-small-only mdb-color">
+        <!--Footer Links-->
+        <div class="container-fluid">
+          <div class="row">
+            <!--Second column-->
+            <div class="col-md-3 col-md-offset-2">
+              <p class="column-title white-text">USEFUL LINKS</p>
+              <ul>
+                <li><a href="#" data-toggle="modal" data-target="#contactForm">Contact us</a></li>
+                <li><a href="#">calender</a></li>
+                <li><a href="#">Browsers and devices</a></li>
+              </ul>
+            </div>
+            <!--/.Second column-->
+            <!--Third column-->
+            <div class="col-md-3 col-md-offset-2">
+              <p class="column-title white-text">CONTACT US</p>
+              <ul>
+                <li>khem raj meena</li>
+                <li>Blablabla</li>
+                <li>+91-7755058011</li>
+              </ul>
+            </div>
+            <!--/.Third column-->
+          </div>
+        </div>
+        <!--/.Footer Links-->
+        <hr>
+        <!--Social buttons-->
+        <div class="social-section">
+          <ul>
+            <li><a href="" class="btn btn-fb blue darken-4"><i class="fa fa-facebook left "></i> Facebook</a></li>
+            <li><a href="" class="btn btn-tw  teal darken-4"><i class="fa fa-instagram left"></i> Instagram</a></li>
+            <li><a href="" class="btn btn-gplus pink darken-4"><i class="fa fa-youtube left"></i> You Tube</a></li>
+          </ul>
+        </div>
+        <!--/.Social buttons-->
+        <!--Copyright-->
+        <div class="footer-copyright">
+          <div class="container-fluid">
+            © 2016 Copyright: <a href="https://www.facebook.com/khemraj891289" target="blank">khemraj.com</a>
+          </div>
+        </div>
+        <!--/.Copyright-->
+      </footer>
+     <!--/.Footer-->
+    </div>  
+
+    <!-- jQuery -->
+    <script src="javascripts/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="javascripts/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="javascripts/mdb.min.js"></script> 
+  </body>
+</html>

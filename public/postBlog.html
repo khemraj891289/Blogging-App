@@ -1,0 +1,7 @@
+ <form id="postblog">
+    <input required type="text" placeholder="Article Title" ng-model="newArticle.title" /><br/><br/>
+
+    <div text-angular ng-model="newArticle.text" required placeholder="Article Text"></div>
+    <input class="button btn success-color-dark" type="submit" value="Post" ng-click="post()" ng-hide="editMode"/>
+    <!-- <input class="button btn success-color-dark" type="submit" value="edit" ng-click="edit()" ng-show="editMode"/> -->
+  </form>  
